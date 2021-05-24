@@ -1,0 +1,74 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.9378679664252519 0.3236953959297324 0.12499987282896088 5.502000034271465
+  position -0.0322772735937403 0.9295126617263294 0.9085494346667176
+}
+TexturedBackground {
+  texture "stadium"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.5 1
+  floorAppearance PBRAppearance {
+    roughness 1
+    roughnessMap ImageTexture {
+      url [
+        "textures/parquetry/chequered_parquetry_roughness.jpg"
+      ]
+    }
+    metalness 0
+    normalMap ImageTexture {
+      url [
+        "textures/parquetry/chequered_parquetry_normal.jpg"
+      ]
+    }
+    occlusionMap ImageTexture {
+      url [
+        "textures/parquetry/chequered_parquetry_occlusion.jpg"
+      ]
+    }
+  }
+}
+TrackOne {
+}
+Microbot {
+  hidden position_0_0 -3946.030390524633
+  hidden position_0_1 -4020.41176825555
+  hidden linearVelocity_0 -0.07627829127121744 3.233402596030635e-05 0.0019540587862373043
+  hidden angularVelocity_0 0.0017077806006071312 0.0004391896026017803 0.022688134916100847
+  hidden translation_6 0.0004992519805202406 -6.616809500689658e-06 0.0013145054440335232
+  hidden rotation_6 0.0021294411750988882 0.9999970237139464 0.0011908163294742282 -1.8296207053590045e-11
+  hidden linearVelocity_6 -0.07527677222067729 -0.001049980343212021 0.001658117441748113
+  hidden angularVelocity_6 0.0017077806013083437 0.00043918958817808457 0.022688134915918878
+  hidden translation_7 -0.0008273739502438759 3.246559973500013e-06 0.001123068561088787
+  hidden rotation_7 0.0026967334028014434 0.9999363068292894 -0.010959466846311182 -1.8391124968856663e-11
+  hidden linearVelocity_7 -0.07531421476348361 -0.0010562730989838707 0.0022949020122881247
+  hidden angularVelocity_7 0.001707780600249489 0.000439189588471989 0.022688134915804608
+  hidden rotation_9 1 0 0 0.19001761585251487
+  hidden linearVelocity_9 -0.0752012361170513 -1.7715418364983786e-06 0.0014796167508167233
+  hidden angularVelocity_9 0.13243603495641465 -0.005116966485877801 6.021330946158587
+  hidden rotation_10 -0.9999999999999999 0 0 0.8268283393851311
+  hidden linearVelocity_10 -0.07522347530037206 -1.0475269987976878e-06 0.0023156542110791996
+  hidden angularVelocity_10 0.1851523378024043 0.014567954197404386 6.01992962481372
+  translation -0.003731107635252145 0.021448979236581317 0.10767403497296732
+  rotation 0.00035862746913997923 -0.999999653042204 0.0007518655531182375 1.5443698117010543
+  controller "lfr"
+  extensionSlot [
+    DistanceSensor {
+      translation -0.02 0 0.05
+      rotation 0.5771968951617173 -0.5771968951617173 0.577656895078166 -2.093935307179586
+      name "irright"
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.02 0 0.05
+      rotation 0 0 1 -1.5707953071795862
+      name "irleft"
+      type "infra-red"
+    }
+  ]
+}
